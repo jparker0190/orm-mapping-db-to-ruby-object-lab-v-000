@@ -80,6 +80,6 @@ class Student
     sql = <<-SQL
     SELECT * FROM students where grade = #{grade}
     SQL
-    DB[:conn].execute(sql, grade)
+    DB[:conn].execute(sql)
   end
 end
